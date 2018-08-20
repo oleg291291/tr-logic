@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation Form</title>
+</head>
+
+<body>
+    <div class="page-container" id="barba-wrapper">
+        <h1 class="page-header">Validation Form App</h1>
+        <div class="barba-container">
+            <div class="form-container">
+                <div class="form__tabs">
+
+                    <a href="#login" id="login-tab" name="login-tab" class="form__tab__active form__tab">Login</a>
+                    <span class="form__tabs-divider">/</span>
+                    <a href="#register" id="register-tab" name="register-tab" class="form__tab">Sign Up</a>
+
+                </div>
+
+
+                <div class="form__panel form__panel__show" id="login">
+
+                    <form class="form-login">
+
+                        <label class="form-label" for="profileLoginEmail">Email:
+                            <input class="form-input form-login__input-email" id="profileLoginEmail" name="name" placeholder="Your email" required="required" type="text">
+                        </label>
+                        <label class="form-label" for="profileLoginPassword">Password:
+                            <input class="form-input form-login__input-password" id="profileLoginPassword" name="password" placeholder="Your password" required='required' type="password">
+                        </label>
+
+                        <input class="form-input form__button-submit-login" type="submit" value="Login">
+                        <p class="form__login-tips"></p>
+
+                    </form>
+                </div>
+
+                <div class="form__panel form__panel__hide" id="register">
+
+                    <form class="form-registration">
+
+                        <label class="form-label" for="profileRegistrationName">Name:
+                            <input class="form-input form-registration__input-name" id="profileRegistrationName" name="name" placeholder="Enter your name*" required="required" type="text">
+                        </label>
+                        <label class="form-label" for="profileRegistrationEmail">Email:
+                            <input class="form-input form-registration__input-email" class='email' id="profileRegistrationEmail" name="email" placeholder="Enter your email*" required="required" type="email">
+                        </label>
+                        <label class="form-label" for="profileRegistrationPassword">Password:
+                            <input class="form-input form-registration__input-password" id="profileRegistrationPassword" name="password" placeholder="Enter your password*" required='required'
+                                type="text">
+                        </label>
+
+                        <input class="form-input form__button-submit-register" id='send' type="submit" value="Sign Up">
+                        <p class="form__sign-up-tips"></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

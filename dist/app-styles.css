@@ -1,0 +1,125 @@
+/*normalize*/
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0px; }
+
+a {
+  outline: none; }
+
+/* My reset */
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #342E37;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif; }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #F4FAFF, #FFF, #F4FAFF);
+  color: #342E37;
+  font-family: Helvetica, sans-serif; }
+
+.page-header {
+  margin: 16px 0; }
+
+.form-container, .profile-container {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(-135deg, #D6EDFF, #E2E4F6);
+  border-radius: 8px; }
+
+.form__tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 260px;
+  font-size: 32px;
+  margin-bottom: 8px; }
+
+.form__tab {
+  padding: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.form__tab__active {
+  background-color: #62BCFA; }
+
+.form__tabs-divider {
+  cursor: arrow; }
+
+.form__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form__panel__hide {
+  display: none; }
+
+.form-login, .form-registration {
+  display: flex;
+  flex-direction: column; }
+
+.form-input {
+  display: block;
+  width: 260px;
+  margin: 8px 0;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #342E37;
+  padding: 0 8px; }
+
+.form__button-submit-login, .form__button-submit-register, .profile__button-log-out {
+  border-radius: 8px;
+  font-size: 32px;
+  margin: 16px auto 12px;
+  padding: 8px;
+  background-color: #9FD356;
+  width: auto;
+  height: auto;
+  border: none;
+  color: #342E37; }
+  .form__button-submit-login:hover, .form__button-submit-register:hover, .profile__button-log-out:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
+.form__login-tips, .form__sign-up-tips {
+  width: 260px;
+  color: #FFFFFF; }
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.profile__header {
+  margin-bottom: 32px; }
+
+.profile__user-name {
+  margin-bottom: 16px; }
+
+.profile__user-email {
+  margin-bottom: 16px; }
+
